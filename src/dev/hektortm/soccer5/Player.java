@@ -53,6 +53,13 @@ public class Player extends Person {
         return powerAtGoalKick;
     }
 
+    public void modifyMotivation(int dif, Operation op) {
+        switch(op) {
+            case DECREASE -> this.motivation -= dif;
+            case INCREASE -> this.motivation += dif;
+        }
+    }
+
     public int getTotalGoals() {
         return this.numberOfGoals;
     }
