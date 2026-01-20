@@ -25,7 +25,7 @@ public class GoalKeeper extends Player {
 
     public boolean ballHold(int powerAtGoalKick) {
         Random rdm = new Random();
-        int rdmVal = rdm.nextInt(-1, 1);
+        int rdmVal = rdm.nextInt(-1, 2);
         this.reaction += rdmVal;
 
         if (this.reaction >= powerAtGoalKick) return true;

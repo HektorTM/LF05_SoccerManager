@@ -34,7 +34,8 @@ public class SoccerManagerUI {
 
         Game game = new Game(dortmund, werder);
 
-        System.out.println(game);
-        System.out.println(game.getScore());
+        Gameplay gp = new Gameplay(game);
+
+        gp.play();
     }
 }

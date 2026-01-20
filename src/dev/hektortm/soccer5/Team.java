@@ -1,6 +1,7 @@
 package dev.hektortm.soccer5;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Team {
     private String name;
@@ -61,5 +62,21 @@ public class Team {
 
     public String getName() {
         return this.name;
+    }
+
+    public GoalKeeper getGoalKeeper() {
+        return this.goalKeeper;
+    }
+
+    public Player getRandomPlayer() {
+        Random rdm = new Random();
+
+        int rdmPlayer = rdm.nextInt(0, this.squad.size()-1);
+
+        return this.squad.get(rdmPlayer);
+    }
+
+    public Coach getTrainer() {
+        return this.coach;
     }
 }

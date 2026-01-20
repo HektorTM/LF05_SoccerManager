@@ -13,6 +13,14 @@ public class Game {
         this.goalsAway = 0;
     }
 
+    public Team getHomeTeam() {
+        return this.home;
+    }
+
+    public Team getAwayTeam() {
+        return this.away;
+    }
+
     public void increaseHomeGoals() {
         this.goalsHome += 1;
     }
